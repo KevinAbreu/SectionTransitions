@@ -5,6 +5,10 @@ body{
 }
 .hidden{
   opacity: 0;
+
+}
+.show{
+  animation: showing 2s;
 }
 p{
   font-family: sans-serif;
@@ -33,12 +37,12 @@ p{
   position: absolute;
   width: 50%;
   right: 20px;
-  animation: show 2s;
+  /* animation: show 2s; */
 }
 #sec1 img{
   position: relative;
   left: 140px;
-  animation: show 2s;
+  /* animation: show 2s; */
 }
 .sec1{
   margin-top: 300px;
@@ -59,12 +63,12 @@ border-bottom: solid black 2px;
   position: absolute;
   width: 50%;
   right: 20px;
-  animation: show 2s;
+  /* animation: show 2s; */
 }
 #sec3 img{
   position: relative;
   left: 140px;
-  animation: show 2s;
+  /* animation: show 2s; */
 }
 .sec3{
   margin-top: 300px;
@@ -81,13 +85,13 @@ border-bottom: solid black 2px;
 }
 #sec2 p{
   text-align: center;
-  animation: show 2s;
+  /* animation: show 2s; */
 }
 #sec2 img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  animation: show 2s;
+  /* animation: show 2s; */
 }
 .sec2{
   margin-top: 300px;
@@ -102,7 +106,7 @@ border-bottom: solid black 2px;
 }
 #sec4 p {
   text-align: center;
-  animation: show 2s;
+  /* animation: show 2s; */
 }
 .sec4{
   margin-top: 300px;
@@ -110,7 +114,7 @@ border-bottom: solid black 2px;
 /* sec4 */
 
 /* animation */
-@keyframes show {
+@keyframes showing {
 from{
   opacity:0;
     }
@@ -118,4 +122,19 @@ to{
     opacity:1;
     }
 }
+@keyframes fade {
+from{
+  opacity:1;
+    }
+to{
+    opacity:0;
+    }
+}
 /* animation */
+
+.section{
+  /* background-color: red; */
+  /* animation: show 2s; */
+  /* animation: fade 2s; */
+
+}
